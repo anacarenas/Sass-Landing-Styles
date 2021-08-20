@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+
+// Variables
+
+$primary-color: #ff822e;
+$secondary-color: rgb(255, 218, 115);
+$terciary-color: white;
+$font-color: #aaa;
+
+$font-p: 1.8rem;
+$font-h1: 3.0rem;
+$font-h2: 2.4rem;
+$font-h3: 1.5rem;
+
+$box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+$box-shadow-hover: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+
+// Globales
+
+html{
+    font-size: 100%;
+    box-sizing: content-box;
+}
+
+
+
+body{
+    margin:0;
+    padding:0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+    background: url('../img/fondo.png');
+}
+
+ul{
+    list-style-type: none;
+}
+
+a, .login{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(134, 132, 132);
+}
+
+img{
+    width:100%;
+    height: 100%;
+}
+
+nav, .seccion, .presentacion, .footer-content{
+    width: 90%;
+    margin:auto;
+}
+
+.titulo-seccion, .presentacion{
+    margin-bottom: 10%;
+}
+
+
+
+p{
+    font-size:$font-p;
+    color: rgb(134, 132, 132);
+}
+
+h2{
+    font-size: $font-h2;
+    color: grey;
+}
+
+h3{
+    font-size: $font-h3;
+    font-weight:bolder;
+    
+}
+
+.btn{
+    border: none;
+    border-radius:10px;
+    padding: 0.7em 1.5em;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size:1.5rem;
+    font-weight: 500;
+    transition: transform 100ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+    
+}
+
+
+
+.btn-principal{
+    @extend .btn;
+    color: #fff;
+    background-color: #6495ED;
+}
+
+.btn-secundario{
+    @extend .btn;
+    background-color:rgb(255, 144, 41);
+}
+
+// USO DE MIXINS EN SASS;
+
+@mixin caja-flex($principal, $cruzado, $wrap){
+    display: flex;
+    justify-content: $principal;
+    align-items: $cruzado;
+    flex-wrap: $wrap;
+}
+
+
+@mixin btn($background-color, $color, $bold){
+    background-color: $background-color;
+    color:$color;
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @if($bold=='true'){
+        font-weight: bolder;
+    }
+
+}

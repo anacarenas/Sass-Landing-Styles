@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
+            <ul>
+                <li><a href="#">Publica un Proyecto</a></li>
+                <li><a href="#">Busca trabajo</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#" class="login">Login</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>Miles de personas listas para comenzar a trabajar en tu proyecto</h1>
+            <p>
+                Inicia ahora!
+            <div>
+                <button class="btn-principal" type ="submit">Publica un proyecto</button>
+                <button class="btn-secundario" type ="submit">Busca trabajo</button>
+            </div>
+        </div>
+        <div class="flex-item2">
+            <img src="img/oficios2.png" alt="caratula" height="800">
+        </div>
+    </section>
+
+
+    <div class="wrapper">
+        <section class="seccion" >
+            <div class="titulo-seccion">
+                <h3>SERVICIOS</h3>
+                <h2>
+                   Conoce los servicios que puedes ofrecer y contratar...
+                </h2>
+            </div>
+            <div class="container">
+       
+                <div class="card-service">
+                    <img src="img/carpintero.png">
+                    <h4>Carpinteria</h4>
+                </div>
+                
+                <div class="card-service">
+                    <img src="img/plomero.png">
+                    <h4>Gasfiteria</h4>
+                </div>
+                
+                <div class="card-service">
+                    <img src="img/constructor.png">
+                    <h4>Construcción</h4>
+                </div>
+                <div class="card-service">
+                    <img src="img/tecnologia.png">
+                    <h4>Tecnología</h4>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <div class="wrapper">
+        <section class="seccion" >
+            <div class="titulo-seccion">
+                <h3>TRABAJADORES TOP</h3>
+                <h2>
+                    Estos son nuestros talentos mejor calificados...
+                </h2>
+            </div>
+            <div class="container">
+                <div class="card-worker">
+                    <img src="img/carpintero.jpg">
+                    <h4>Manuel Nuñez</h4>
+                    <div class="card-info">
+                        <p> Carpinteria </p>
+                        <p>
+                            5 <i class="fa fa-star"></i>
+                        </p>
+                    </div>
+                    <a href="#">Ver Perfil...</a>
+                </div>
+                <div class="card-worker">
+                    <img src="img/albanil.jpg">
+                    <h4>Manuel Nuñez</h4>
+                    <div class="card-info">
+                        <p> Construcción</p>
+                        <p>
+                            5 <i class="fa fa-star"></i>
+                        </p>
+                    </div>
+                    <a href="#">Ver Perfil...</a>
+                </div>
+                <div class="card-worker">
+                    <img src="img/plomero.jpg">
+                    <h4>Manuel Nuñez</h4>
+                    <div class="card-info">
+                        <p> Gasfiteria </p>
+                        <p>
+                            5 <i class="fa fa-star"></i>
+                        </p>
+                    </div>
+                    <a href="#">Ver Perfil...</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="wrapper">
+        <section class="presentacion">
+            <div class="titulo-seccion">
+                <h3>Facil y Rápido</h3>
+                <h2>
+                    Encuentra lo que necesitas en 3 simples pasos...
+                </h2>
+            </div>
+            <div class="container">      
+                <div class="card-worker">
+                    <img src="img/img1.jpg">
+                    <h4>Manuel Nuñez</h4>
+                    <div class="card-info">
+                        <p> Carpinteria </p>
+                        <p>
+                            5 <i class="fa fa-star"></i>
+                        </p>
+                    </div>
+                    <a href="#">Ver Perfil...</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p class="footer-content">
+            ArtWEB &copy;Todos los derechos reservados 2021
+        </p>
+    </footer>
+    <script>
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
+    </script>
+</body>
+</html>
